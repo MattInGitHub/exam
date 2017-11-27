@@ -70,7 +70,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 this@MainActivity.startActivity(intent)
             }
             R.id.nav_gallery -> {
-
+                val intent = Intent()
+                intent.setClass(this@MainActivity, RecycleActivity::class.java!!)
+                this@MainActivity.startActivity(intent)
             }
             R.id.nav_slideshow -> {
 
