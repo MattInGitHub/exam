@@ -5,33 +5,33 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_zhenti"
+            android:icon="@drawable/ic_menu_zhenti"
+            android:title="历年真题" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_zuti"
+            android:icon="@drawable/ic_menu_zuhe"
+            android:title="智能组卷" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="单题">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_cuoti"
+                android:icon="@drawable/ic_menu_cuoti"
+                android:title="错题本" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_shoucang"
+                android:icon="@drawable/ic_menu_shoucang"
+                android:title="收藏题目" />
+            <item
+                android:id="@+id/nav_biji"
+                android:icon="@drawable/ic_menu_biji"
+                android:title="笔记题目" />
+            <item
+                android:id="@+id/nav_lishi"
+                android:icon="@drawable/ic_menu_lishi"
+                android:title="练习历史" />
         </menu>
     </item>
 

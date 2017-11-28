@@ -63,27 +63,27 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 //        main_content_message.setText(item.itemId)
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
+            R.id.nav_zhenti -> {
                 // Handle the camera action
                 val intent = Intent()
                 intent.setClass(this@MainActivity, TabActivity::class.java!!)
                 this@MainActivity.startActivity(intent)
             }
-            R.id.nav_gallery -> {
+            R.id.nav_zuti -> {
                 val intent = Intent()
                 intent.setClass(this@MainActivity, RecycleActivity::class.java!!)
                 this@MainActivity.startActivity(intent)
             }
-            R.id.nav_slideshow -> {
+            R.id.nav_cuoti -> {
 
             }
-            R.id.nav_manage -> {
+            R.id.nav_shoucang -> {
 
             }
-            R.id.nav_share -> {
+            R.id.nav_biji -> {
 
             }
-            R.id.nav_send -> {
+            R.id.nav_lishi -> {
 
             }
         }
