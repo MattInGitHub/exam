@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_zuti -> {
                 val intent = Intent()
-                intent.setClass(this@MainActivity, RecycleActivity::class.java!!)
+                intent.setClass(this@MainActivity, QuestionActivity::class.java!!)
                 this@MainActivity.startActivity(intent)
             }
             R.id.nav_cuoti -> {
