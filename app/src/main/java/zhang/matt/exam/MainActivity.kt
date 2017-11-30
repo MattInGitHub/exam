@@ -9,13 +9,14 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.bottom_nav.*
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,BottomNavigationView.OnNavigationItemSelectedListener {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -65,14 +66,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_zhenti -> {
                 // Handle the camera action
-                val intent = Intent()
-                intent.setClass(this@MainActivity, TabActivity::class.java!!)
-                this@MainActivity.startActivity(intent)
+//                val intent = Intent()
+//                intent.setClass(this@MainActivity, TabActivity::class.java!!)
+//                this@MainActivity.startActivity(intent)
             }
             R.id.nav_zuti -> {
-                val intent = Intent()
-                intent.setClass(this@MainActivity, QuestionActivity::class.java!!)
-                this@MainActivity.startActivity(intent)
+//                val intent = Intent()
+//                intent.setClass(this@MainActivity, QuestionActivity::class.java!!)
+//                this@MainActivity.startActivity(intent)
             }
             R.id.nav_cuoti -> {
 
@@ -90,5 +91,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    fun open_exam(v:View){
+        val intent = Intent()
+        intent.setClass(this@MainActivity, QuestionActivity::class.java!!)
+        this@MainActivity.startActivity(intent)
     }
 }
