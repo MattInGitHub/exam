@@ -64,6 +64,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 //        main_content_message.setText(item.itemId)
         // Handle navigation view item clicks here.
         when (item.itemId) {
+            R.id.nav_zuoye -> {
+
+            }
             R.id.nav_zhenti -> {
                 // Handle the camera action
 //                val intent = Intent()
@@ -81,9 +84,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_shoucang -> {
 
             }
-            R.id.nav_biji -> {
-
-            }
             R.id.nav_lishi -> {
 
             }
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     fun open_exam(v:View){
         val intent = Intent()
-        intent.setClass(this@MainActivity, QuestionActivity::class.java!!)
+        intent.setClass(this@MainActivity, TreeActivity::class.java!!)
         this@MainActivity.startActivity(intent)
     }
 }

@@ -5,6 +5,10 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_zuoye"
+            android:icon="@drawable/ic_menu_zuoye"
+            android:title="发布作业" />
+        <item
             android:id="@+id/nav_zhenti"
             android:icon="@drawable/ic_menu_zhenti"
             android:title="历年真题" />
@@ -24,10 +28,6 @@
                 android:id="@+id/nav_shoucang"
                 android:icon="@drawable/ic_menu_shoucang"
                 android:title="收藏题目" />
-            <item
-                android:id="@+id/nav_biji"
-                android:icon="@drawable/ic_menu_biji"
-                android:title="笔记题目" />
             <item
                 android:id="@+id/nav_lishi"
                 android:icon="@drawable/ic_menu_lishi"
