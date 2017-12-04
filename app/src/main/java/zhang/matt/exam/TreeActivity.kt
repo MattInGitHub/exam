@@ -3,6 +3,7 @@ package zhang.matt.exam
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
 import com.multilevel.treelist.Node
 
 import kotlinx.android.synthetic.main.activity_tree.*
@@ -37,7 +38,8 @@ class TreeActivity : AppCompatActivity() {
         mDatas.add(Node(15.toString() + "", 14.toString() + "", "C"))
         mDatas.add(Node(16.toString() + "", 15.toString() + "", "C"))
 
-        val catTreeAdapter = CatTreeAdapter(tree_recycle,this,mDatas,0)
+        tree_recycle.layoutManager = LinearLayoutManager(this)
+        val catTreeAdapter = CatTreeAdapter(tree_recycle,this,mDatas,1)
         tree_recycle.adapter = catTreeAdapter
     }
 }

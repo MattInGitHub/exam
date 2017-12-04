@@ -26,26 +26,25 @@ public class CatTreeAdapter extends TreeRecyclerAdapter {
     public CatTreeAdapter(RecyclerView mTree, Context context, List<Node> datas, int defaultExpandLevel) {
 
         super(mTree, context, datas, defaultExpandLevel);
-        Log.e("AAAA",datas.size()+"");
     }
 
     @Override
     public void onBindViewHolder(Node node, RecyclerView.ViewHolder holder, int position) {
-        final MyHoder viewHolder = (MyHoder) holder;
+        final MyHolder viewHolder = (MyHolder) holder;
+        Log.e("AAAA",node.getName());
         viewHolder.label.setText(node.getName());
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new MyHoder(View.inflate(mContext, R.layout.item_question_cat,null));
+        return new MyHolder(View.inflate(mContext, R.layout.item_question_cat,null));
     }
 
-    class MyHoder extends RecyclerView.ViewHolder{
+    class MyHolder extends RecyclerView.ViewHolder{
         public TextView label;
-        public MyHoder(View itemView) {
+        public MyHolder(View itemView) {
             super(itemView);
-            label = (TextView) itemView
-                    .findViewById(R.id.text_cat);
+            label = (TextView) itemView.findViewById(R.id.text_cat);
         }
 
     }
